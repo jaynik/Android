@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <!-- TableLayout has 5rows and each row is divided into 4 columns and each cell acts as a button-->
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="25dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:textSize="25dp"
+        android:gravity="right"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/black"
+        android:stretchColumns="0,1,2,3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonadd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="4"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonsub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonmul"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="*"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttondot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="."
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonclr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttondiv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttoneql"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_span="4"
+                android:text="="
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+package com.example.calculator_deekonda;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class MainActivity extends AppCompatActivity {
+
+    /* Declare text is for result */
+    private EditText res;
+
+    /* Declare variables to store operands */
+    private double var1=0.0;
+    private double var2;
+
+    /* Declare button ids for numbers*/
+    private Button zero_0;
+    private Button one_1;
+    private Button two_2;
+    private Button three_3;
+    private Button four_4;
+    private Button five_5;
+    private Button six_6;
+    private Button seven_7;
+    private Button eight_8;
+    private Button nine_9;
+
+    /* Declare button ids for operators */
+    private Button add;
+    private Button sub;
+    private Button mul;
+    private Button div;
+    private Button equal;
+    private Button clear;
+    private Button dot;
+
+    /* Declare constant for operations */
+    private char OPERATION = ' ';
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setIds();
+
+        zero_0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(res.getText().toString().equals("0"))
+                    res.setText("0");
+                else
+                    res.setText(res.getText().toString()+"0");
+            }
+        });
+
+        one_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"1");
+            }
+        });
+
+        two_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"2");
+            }
+        });
+
+        three_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"3");
+            }
+        });
+
+        four_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"4");
+            }
+        });
+
+        five_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"5");
+            }
+        });
+
+        six_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"6");
+            }
+        });
+
+        seven_7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"7");
+            }
+        });
+
+        eight_8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"8");
+            }
+        });
+
+        nine_9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+"9");
+            }
+        });
+
+        dot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText(res.getText().toString()+".");
+            }
+        });
+
+
+        /* For operations */
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String temp=res.getText().toString();
+                var1=Double.parseDouble(temp);
+                OPERATION='+';
+                res.setText("");
+            }
+        });
+
+        sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String temp=res.getText().toString();
+                var1=Double.parseDouble(temp);
+                OPERATION='-';
+                res.setText("");
+            }
+        });
+
+        mul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String temp=res.getText().toString();
+                var1=Double.parseDouble(temp);
+                OPERATION='*';
+                res.setText("");
+            }
+        });
+
+        div.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String temp=res.getText().toString();
+                var1=Double.parseDouble(temp);
+                OPERATION='/';
+                res.setText("");
+            }
+        });
+
+        equal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String temp=res.getText().toString();
+                var2=Double.parseDouble(temp);
+                double resoper;
+
+                switch (OPERATION)
+                {
+                    case '+':
+                        resoper=var1+var2;
+                        res.setText(String.valueOf(resoper));
+                        break;
+                    case '-':
+                        resoper=var1-var2;
+                        res.setText(String.valueOf(resoper));
+                        break;
+
+                    case '*':
+                        resoper=var1*var2;
+                        res.setText(String.valueOf(resoper));
+                        break;
+
+                    case '/':
+                        resoper=var1/var2;
+                        res.setText(String.valueOf(resoper));
+                        break;
+                }
+            }
+        });
+
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                res.setText("");
+                var1=0.0;
+                var2=0.0;
+            }
+        });
+    }
+
+    public void setIds()
+    {
+        zero_0 = (Button)findViewById(R.id.button0);
+        one_1 = (Button)findViewById(R.id.button1);
+        two_2 = (Button)findViewById(R.id.button2);
+        three_3 = (Button)findViewById(R.id.button3);
+        four_4 = (Button)findViewById(R.id.button4);
+        five_5 = (Button)findViewById(R.id.button5);
+        six_6 = (Button)findViewById(R.id.button6);
+        seven_7 = (Button)findViewById(R.id.button7);
+        eight_8 = (Button)findViewById(R.id.button8);
+        nine_9 = (Button)findViewById(R.id.button9);
+        add = (Button)findViewById(R.id.buttonadd);
+        sub = (Button)findViewById(R.id.buttonsub);
+        mul = (Button)findViewById(R.id.buttonmul);
+        div = (Button)findViewById(R.id.buttondiv);
+        equal = (Button)findViewById(R.id.buttoneql);
+        clear = (Button)findViewById(R.id.buttonclr);
+        dot = (Button)findViewById(R.id.buttondot);
+
+        res=(EditText)findViewById(R.id.res);
+    }
+
+}
